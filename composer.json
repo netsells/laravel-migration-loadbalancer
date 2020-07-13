@@ -1,0 +1,44 @@
+{
+    "name": "netsells/laravel-migration-loadbalancer",
+    "description": "",
+    "keywords": [
+        "netsells"
+    ],
+    "homepage": "https://github.com/netsells/laravel-migration-loadbalancer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam Jordan",
+            "email": "sam@netsells.co.uk",
+            "homepage": "https://netsells.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Netsells\\MigrationLb\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\MigrationLb\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Netsells\\MigrationLb\\MigrationLbServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
