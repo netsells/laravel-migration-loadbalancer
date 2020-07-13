@@ -7,8 +7,8 @@ use Illuminate\Database\Migrations\Migrator;
 
 class MigrationLb
 {
-    protected Migrator $migrator;
-    protected Application $laravel;
+    protected $migrator;
+    protected $laravel;
 
     public function __construct(Application $laravel)
     {
