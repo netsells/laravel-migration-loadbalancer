@@ -1,6 +1,6 @@
 # Laravel Migration Loadbalancer
 
-Provides middleware that returns a 503 should there be any migrations that need migrating or if there are migrations on the db that do not exist in the codebase. This is to be used with a loadbalancer so that only the correct codebase is live when the database migrates.
+Provides middleware that returns a 503 should there be any migrations that need migrating. This is to be used with a loadbalancer so that only the correct codebase is live when the database migrates.
 
 See https://engineering.instawork.com/elegant-database-migrations-on-ecs-74f3487da99f
 
