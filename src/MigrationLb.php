@@ -18,7 +18,7 @@ class MigrationLb
 
     public function isReady(): bool
     {
-        return ! $this->hasMigrationsInCodebaseButNotDb() && ! $this->hasMigrationsInDbButNotInCodebase();
+        return ! $this->hasMigrationsInCodebaseButNotDb();
     }
 
     public function hasMigrationsInCodebaseButNotDb(): bool
